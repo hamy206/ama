@@ -1,14 +1,15 @@
 {
   "name": "final-proto-for-ama",
   "version": "1.0.0",
-  "main": "script_Version18.js",
+  "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Hamza Muhammad",
   "license": "ISC",
-  "description": "",
+  "description": "AMA Foundation login/signup system",
   "dependencies": {
     "bcrypt": "^6.0.0",
     "body-parser": "^2.2.0",
