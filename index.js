@@ -7,6 +7,16 @@ const bodyParser = require('body-parser');
 const app = express();
 const db = new sqlite3.Database('./ama.db');
 
+const session = require('express-session');
+
+app.use(session({
+  secret: 'ama_secret_2025',
+  resave: false,
+  saveUninitialized: false,
+  cookie: { secure: false } // Use true only if HTTPS
+}));
+
+
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname)); // Serve static files from root folder
